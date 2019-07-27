@@ -80,7 +80,17 @@ a2ensite default-ssl
 service apache2 reload
 ```
 
-6. Enable Apache Prefork. More information is available on [Apache Prefork](https://httpd.apache.org/docs/2.4/mod/prefork.html) page.
+6. Enable Apache Prefork. You can read more on [Apache Prefork](https://httpd.apache.org/docs/2.4/mod/prefork.html) page.
+
+7. Run either the graphical or command line installation wizard. Refer to:
+
+- [The Installation Wizard](https://doc.owncloud.com/server/10.1/admin_manual/installation/installation_wizard.html) for GUI installation, or
+- [Command Line Installation](https://doc.owncloud.com/server/10.1/admin_manual/installation/command_line_installation.html) page to run a CLI version.
+
+
+
+
+
 
 
 
