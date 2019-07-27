@@ -18,15 +18,15 @@ As a user, you will learn how to connect to owncloud using desktop and mobile cl
 
 Before installation, verify system and software requirements on [System Requirements page](https://doc.owncloud.org/server/10.0/admin_manual/installation/system_requirements.html).
 
-## Installation options
+## Installing ownCloud
 
-ownCloud can be installed either using Docker or manually with installation and resolving of all dependencies.
+You can install ownCloud either using Docker or manually.
 
-### Installing with Docker
+### Docker installation
 
-1. Download a Docker image from the [official ownCloud Docker](https://hub.docker.com/r/owncloud/server/) page.
+Download a Docker image from the [official ownCloud Docker](https://hub.docker.com/r/owncloud/server/) page.
 
-2. To start this image successfully, prepare separate MariaDB and Redis containers and data volume in the host filesystem.
+Prepare separate MariaDB and Redis containers and data volume in the host filesystem.
 
     The configuration:
 
@@ -34,9 +34,9 @@ ownCloud can be installed either using Docker or manually with installation and 
 
     - mounts the data and MySQL data directories on the host for persistent storage.
 
-3. Create a new project directory and download `docker-compose.yml` from [the ownCloud Docker GitHub repository](https://github.com/owncloud-docker/server.git).
+Create a new project directory and download `docker-compose.yml` from [the ownCloud Docker GitHub repository](https://github.com/owncloud-docker/server.git).
 
-4. In the project directory create `.env` file and fill it with following settings:
+Create `.env` file in the project directory and fill it with following settings:
 
 
 | Setting name | Description | Example |
@@ -48,11 +48,11 @@ ownCloud can be installed either using Docker or manually with installation and 
 | `HTTP_PORT`| The HTTP port to bind to | `8080` |
 
 
-5. Start the container. You can find instructions for plain docker in the [GitHub repository](https://github.com/owncloud-docker/server#launch-with-plain-docker).
+Start the container. You can find instructions for plain docker in the [GitHub repository](https://github.com/owncloud-docker/server#launch-with-plain-docker).
 
-6. Run `docker-compose ps` command to check whether all containers have successfully started. 
+Run `docker-compose ps` command to check whether all containers have successfully started. 
 
-7. Open [http://localhost:8080/](http://localhost:8080/). Here you can find a login screen. 
+Open [http://localhost:8080/](http://localhost:8080/). Here you can find a login screen. 
 
 ![Login screen](images/1.png)
 
@@ -62,17 +62,19 @@ Find more details on installation and managing ownCloud docker containers at [In
 
 ### Manual installation
 
-1. Download the latest archive with ownCloud server from [ownCloud Download Page](https://owncloud.org/install). You can verify MD5 or SHA256 sum to guarantee successful downloading.
+Download the latest archive with ownCloud server from [ownCloud Download Page](https://owncloud.org/install). You can verify MD5 or SHA256 sum to guarantee successful downloading.
 
-2. Extract the archive contents into a single ownCloud directory.
+> You can read an installation example on [Install ownCloud on Ubuntu 18.04](https://doc.owncloud.com/server/10.1/admin_manual/installation/ubuntu_18_04.html) page.
 
-3. Copy ownCloud directory to its final destination. 
+Extract the archive contents into a single ownCloud directory.
 
-In case of Apache HTTP server it can be Apache document root. For other web servers it should be a folder outside the document root.
+Copy ownCloud directory to its final destination. 
 
-4. Configure the web server. Read more about it at [Configure the Web Server](https://doc.owncloud.com/server/10.1/admin_manual/installation/manual_installation.html#configure-the-web-server) chapter.
+    In case of Apache HTTP server it can be Apache document root. For other web servers it should be a folder outside the document root.
 
-5. If you run Apache under Ubuntu, you can enable SSL with following commands:
+Configure the web server. Read more about it at [Configure the Web Server](https://doc.owncloud.com/server/10.1/admin_manual/installation/manual_installation.html#configure-the-web-server) chapter.
+
+If you run Apache under Ubuntu, you can enable SSL with following commands:
 
 ```
 a2enmod ssl
@@ -80,14 +82,34 @@ a2ensite default-ssl
 service apache2 reload
 ```
 
-6. Enable Apache Prefork. You can read more on [Apache Prefork](https://httpd.apache.org/docs/2.4/mod/prefork.html) page.
+Enable Apache Prefork. You can read more on [Apache Prefork](https://httpd.apache.org/docs/2.4/mod/prefork.html) page.
 
-7. Run either the graphical or command line installation wizard. Refer to:
+Run either the graphical or command line installation wizard. Refer to:
 
 - [The Installation Wizard](https://doc.owncloud.com/server/10.1/admin_manual/installation/installation_wizard.html) for GUI installation, or
 - [Command Line Installation](https://doc.owncloud.com/server/10.1/admin_manual/installation/command_line_installation.html) page to run a CLI version.
 
+## Creating user accounts
 
+Log into ownCloud. Go to Users menu item.
+
+![Users menu](images/2.png)
+
+Right above the users table, fill in three fields from the left to the right:
+
+- Login,
+- Email,
+- Group.
+
+> Login names may contain letters (a-z, A-Z), numbers (0-9), dashes (-), underscores (_), periods (.) and at signs (@).
+
+Click `Create` button.
+
+![New user fields](images/3.png)
+
+
+
+## Enabling users to work with ownCloud
 
 
 
