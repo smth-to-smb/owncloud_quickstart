@@ -20,14 +20,36 @@ Before installation, verify system and software requirements on [System Requirem
 
 ## Installation options
 
-ownCloud can be installed either using Docker or manually, with installation and resolving of all dependencies.
+ownCloud can be installed either using Docker or manually with installation and resolving of all dependencies.
 
 ### Installing with Docker
 
-You can find a Docker image on the [official ownCloud Docker page](https://hub.docker.com/r/owncloud/server/).
+1. Download a Docker image from the [official ownCloud Docker](https://hub.docker.com/r/owncloud/server/) page.
 
-To use this image, you need to prepare separate MariaDB and Redis containers and data volume in the host filesystem.
+2. To start this image successfully, prepare separate MariaDB and Redis containers and data volume in the host filesystem.
 
+The configuration:
+
+- exposes ports 8080, allowing for HTTP connections,
+
+- mounts the data and MySQL data directories on the host for persistent storage.
+
+3. Create a new project directory and download `docker-compose.yml` from [the ownCloud Docker GitHub repository](https://github.com/owncloud-docker/server.git).
+
+4. In the project directory create `.env` file and fill it with following settings:
+
+| Setting name | Description | Example |
+| ------------ |:-----------:| -------:|
+| `OWNCLOUD_VERSION`| The ownCloud version | `latest` |
+| `OWNCLOUD_DOMAIN`| The ownCloud domain | `localhost` |
+| `ADMIN_USERNAME`| The admin username | `admin` |
+| `ADMIN_PASSWORD`| The admin user’s password | `admin` |
+| `HTTP_PORT`| The HTTP port to bind to | `8080` |
+
+
+
+
+Configuration settings and further instructions you can find at [Installation on a Local Machine](https://doc.owncloud.com/server/10.1/admin_manual/installation/docker/#installation-on-a-local-machine) chapter.
 
 
 
