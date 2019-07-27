@@ -52,7 +52,7 @@ ownCloud can be installed either using Docker or manually with installation and 
 
 7. Open [http://localhost:8080/](http://localhost:8080/). Here you can find a login screen. 
 
-![Login screen](1.png)
+![Login screen](images/1.png)
 
 Use admin credentials from `.env` file to log into ownCloud.
 
