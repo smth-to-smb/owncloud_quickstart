@@ -16,7 +16,7 @@ As a user, you will learn how to connect to Owncloud using desktop and mobile cl
 
 ## System requirements
 
-Before installation, verify system and software requirements at https://doc.owncloud.org/server/10.0/admin_manual/installation/system_requirements.html.
+Before installation, verify system and software requirements at [System Requirements](https://doc.owncloud.org/server/10.0/admin_manual/installation/system_requirements.html) page.
 
 
 
