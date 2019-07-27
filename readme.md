@@ -38,6 +38,7 @@ ownCloud can be installed either using Docker or manually with installation and 
 
 4. In the project directory create `.env` file and fill it with following settings:
 
+
 | Setting name | Description | Example |
 | ------------ |:-----------:| -------:|
 | `OWNCLOUD_VERSION`| The ownCloud version | `latest` |
@@ -45,6 +46,7 @@ ownCloud can be installed either using Docker or manually with installation and 
 | `ADMIN_USERNAME`| The admin username | `admin` |
 | `ADMIN_PASSWORD`| The admin user’s password | `admin` |
 | `HTTP_PORT`| The HTTP port to bind to | `8080` |
+
 
 5. Start the container. You can find instructions for plain docker in the [GitHub repository](https://github.com/owncloud-docker/server#launch-with-plain-docker).
 
@@ -56,10 +58,29 @@ ownCloud can be installed either using Docker or manually with installation and 
 
 Use admin credentials from `.env` file to log into ownCloud.
 
-Configuration settings and further instructions you can find at [Installation on a Local Machine](https://doc.owncloud.com/server/10.1/admin_manual/installation/docker/#installation-on-a-local-machine) chapter.
+Find more details on installation and managing ownCloud docker containers at [Installation on a Local Machine](https://doc.owncloud.com/server/10.1/admin_manual/installation/docker/#installation-on-a-local-machine) chapter.
 
+### Manual installation
 
+1. Download the latest archive with ownCloud server from [ownCloud Download Page](https://owncloud.org/install). You can verify MD5 or SHA256 sum to guarantee successful downloading.
 
+2. Extract the archive contents into a single ownCloud directory.
+
+3. Copy ownCloud directory to its final destination. 
+
+In case of Apache HTTP server it can be Apache document root. For other web servers it should be a folder outside the document root.
+
+4. Configure the web server. Read more about it at [Configure the Web Server](https://doc.owncloud.com/server/10.1/admin_manual/installation/manual_installation.html#configure-the-web-server) chapter.
+
+5. If you run Apache under Ubuntu, you can enable SSL with following commands:
+
+```
+a2enmod ssl
+a2ensite default-ssl
+service apache2 reload
+```
+
+6. Enable Apache Prefork. More information is available on [Apache Prefork](https://httpd.apache.org/docs/2.4/mod/prefork.html) page.
 
 
 
