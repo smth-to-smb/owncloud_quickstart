@@ -28,11 +28,11 @@ ownCloud can be installed either using Docker or manually with installation and 
 
 2. To start this image successfully, prepare separate MariaDB and Redis containers and data volume in the host filesystem.
 
-The configuration:
+    The configuration:
 
-- exposes ports 8080, allowing for HTTP connections,
+    - exposes ports 8080, allowing for HTTP connections,
 
-- mounts the data and MySQL data directories on the host for persistent storage.
+    - mounts the data and MySQL data directories on the host for persistent storage.
 
 3. Create a new project directory and download `docker-compose.yml` from [the ownCloud Docker GitHub repository](https://github.com/owncloud-docker/server.git).
 
