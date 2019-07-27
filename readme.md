@@ -46,8 +46,15 @@ ownCloud can be installed either using Docker or manually with installation and 
 | `ADMIN_PASSWORD`| The admin user’s password | `admin` |
 | `HTTP_PORT`| The HTTP port to bind to | `8080` |
 
+5. Start the container. You can find instructions for plain docker in the [GitHub repository](https://github.com/owncloud-docker/server#launch-with-plain-docker).
 
+6. Run `docker-compose ps` command to check whether all containers have successfully started. 
 
+7. Open [http://localhost:8080/](http://localhost:8080/). Here you can find a login screen. 
+
+![Login screen](1.png)
+
+Use admin credentials from `.env` file to log into ownCloud.
 
 Configuration settings and further instructions you can find at [Installation on a Local Machine](https://doc.owncloud.com/server/10.1/admin_manual/installation/docker/#installation-on-a-local-machine) chapter.
 
