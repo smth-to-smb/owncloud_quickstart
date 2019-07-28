@@ -26,13 +26,11 @@ You can install ownCloud either using Docker or manually.
 
 Download a Docker image from the [official ownCloud Docker](https://hub.docker.com/r/owncloud/server/) page.
 
-Prepare separate MariaDB and Redis containers and data volume in the host filesystem.
+Prepare separate MariaDB and Redis containers and data volume in the host filesystem. The configuration:
 
-    The configuration:
+- exposes ports 8080, allowing for HTTP connections,
 
-    - exposes ports 8080, allowing for HTTP connections,
-
-    - mounts the data and MySQL data directories on the host for persistent storage.
+- mounts the data and MySQL data directories on the host for persistent storage.
 
 Create a new project directory and download `docker-compose.yml` from [the ownCloud Docker GitHub repository](https://github.com/owncloud-docker/server.git).
 
@@ -134,11 +132,22 @@ Desktop Client is available for MacOS X, Windows and various Linux distributions
 You can download the latest version of the Desktop Client from [ownCloud download page](https://owncloud.com/download/#desktop-clients).
 
 Installation on Windows and Mac OS X is the same for any software application. You can double-click the program and launch an installation wizard.
-Follow all its instructions and get software installed on your computer and configured for your account.
-
-You can find more information about installation on Windows at [Customizing the Windows Installation](https://doc.owncloud.com/desktop/installing.html#customizing-the-windows-installation) chapter.
+Follow all its instructions and get software installed on your computer and configured for your account. You can find more information about installation on Windows at [Customizing the Windows Installation](https://doc.owncloud.com/desktop/installing.html#customizing-the-windows-installation) chapter.
 
 To install Desktop Client on Linux, follow instructions on the [download page](https://owncloud.com/download/#desktop-clients).
+
+After you have installed Desktop Client, you can read more about it on [Using the Synchronization Client](https://doc.owncloud.com/desktop/navigating.html) page.
+
+### ownCloud mobile clients
+
+Android and iOS clients offer several advanced features which make them very convenient and easy to use.
+
+You can download ownCloud mobile app from Google Play and App Store.
+
+For Android, go to [Using the ownCloud Android App](https://doc.owncloud.com/android/) page.
+
+For iOS, visit [Using the ownCloud iOS App](https://doc.owncloud.com/ios/) page.
+
 
 
 
