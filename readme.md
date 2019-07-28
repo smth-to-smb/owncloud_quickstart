@@ -68,9 +68,7 @@ Download the latest archive with ownCloud server from [ownCloud Download Page](h
 
 Extract the archive contents into a single ownCloud directory.
 
-Copy ownCloud directory to its final destination. 
-
-    In case of Apache HTTP server it can be Apache document root. For other web servers it should be a folder outside the document root.
+Copy ownCloud directory to its final destination. In case of Apache HTTP server it can be Apache document root. For other web servers it should be a folder outside the document root.
 
 Configure the web server. Read more about it at [Configure the Web Server](https://doc.owncloud.com/server/10.1/admin_manual/installation/manual_installation.html#configure-the-web-server) chapter.
 
@@ -95,21 +93,60 @@ Log into ownCloud. Go to Users menu item.
 
 ![Users menu](images/2.png)
 
-Right above the users table, fill in three fields from the left to the right:
+Right above the table, fill in three fields from the left to the right:
 
-- Login,
-- Email,
-- Group.
+- login,
+- email,
+- users --- select from the dropdown list.
+
+and click Create button.
 
 > Login names may contain letters (a-z, A-Z), numbers (0-9), dashes (-), underscores (_), periods (.) and at signs (@).
 
-Click `Create` button.
-
 ![New user fields](images/3.png)
 
-
+You can read about other available options on [User Management](https://doc.owncloud.com/server/10.1/admin_manual/configuration/user/user_configuration.html) page.
 
 ## Enabling users to work with ownCloud
+
+## Connecting to ownCloud
+
+As a user, you can connect to ownCloud using:
+
+- ownCloud Desktop Client,
+- ownCloud Android App,
+- ownCloud iOS App.
+
+### ownCloud Desktop Client
+
+Using Desktop Client you can synchronize directories on your computer with ownCloud and have the latest files synchronized from ownCloud.
+
+Desktop Client is available for MacOS X, Windows and various Linux distributions:
+
+- Windows 7+, 
+- Mac OS X 10.7+ (64-bit only),
+- CentOS 6 & 7 (64-bit only),
+- Debian 8.0 & 9.0,
+- Fedora 25 & 26 & 27,
+- Ubuntu 16.04 & 17.04 & 17.10,
+- openSUSE Leap 42.2 & 42.3.
+
+You can download the latest version of the Desktop Client from [ownCloud download page](https://owncloud.com/download/#desktop-clients).
+
+Installation on Windows and Mac OS X is the same for any software application. You can double-click the program and launch an installation wizard.
+Follow all its instructions and get software installed on your computer and configured for your account.
+
+You can find more information about installation on Windows at [Customizing the Windows Installation](https://doc.owncloud.com/desktop/installing.html#customizing-the-windows-installation) chapter.
+
+To install Desktop Client on Linux, follow instructions on the [download page](https://owncloud.com/download/#desktop-clients).
+
+
+
+
+
+
+
+
 
 
 
