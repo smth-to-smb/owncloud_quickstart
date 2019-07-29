@@ -1,5 +1,3 @@
-# Quickstart for installing and using ownCloud
-
 ## Introduction
 
 ownCloud is a cloud collaboration platform which can be deployed on your server facilities. The main purpose of using ownCloud is to share files and directories.
