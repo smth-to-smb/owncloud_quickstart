@@ -2,35 +2,37 @@
 
 ## Introduction
 
-owncloud is a cloud collaboration platform which can be deployed on your server facilities.
+owncloud is a cloud collaboration platform which can be deployed on your server facilities. The main purpose of using ownCloud is to share files between colleagues.
 
 This Quickstart explains how to deploy Owncloud on a server and use it.
 
-After you have read this Quickstart, you will learn how to:
+> All information from this Quickstart is available on [ownCloud Documentation](https://doc.owncloud.com/) page.
 
-- install owncloud on your server,
-- enable users to connect to the installed Owncloud instance,
+After you have read this document, you will learn how to:
+
+- install ownCloud on your server,
+- enable users to connect to the installed ownCloud instance,
 - manage users accounts on the installed instance.
 
-As a user, you will learn how to connect to owncloud using desktop and mobile clients.
+As a user, you will learn how to connect to ownCloud using desktop and mobile clients.
 
-## System and software requirements
+## Installing ownCloud server
 
-Before installation, verify system and software requirements on [System Requirements page](https://doc.owncloud.org/server/10.0/admin_manual/installation/system_requirements.html).
+You can install ownCloud either using a Docker image or manually.
 
-## Installing ownCloud
+### System and software requirements
 
-You can install ownCloud either using Docker or manually.
+Before installation, verify system and software requirements on [Software requirements](https://doc.owncloud.org/server/10.0/admin_manual/installation/system_requirements.html) page.
 
 ### Docker installation
 
 Download a Docker image from the [official ownCloud Docker](https://hub.docker.com/r/owncloud/server/) page.
 
-Prepare separate MariaDB and Redis containers and data volume in the host filesystem. The configuration:
+Prepare separate Docker containers for MariaDB/MySQL and Redis, as well as data volume in the host filesystem. The configuration of ownCloud:
 
-- exposes ports 8080, allowing for HTTP connections,
+- exposes port 8080, allowing for HTTP connections,
 
-- mounts the data and MySQL data directories on the host for persistent storage.
+- mounts the data and MariaDB/MySQL data directories on the host for persistent storage.
 
 Create a new project directory and download `docker-compose.yml` from [the ownCloud Docker GitHub repository](https://github.com/owncloud-docker/server.git).
 
@@ -107,6 +109,12 @@ You can read about other available options on [User Management](https://doc.ownc
 
 ## Enabling users to work with ownCloud
 
+After you create user accounts, provide potential ownCloud users with following information:
+
+- ownCloud server URL, including port 8080,
+- user credentials,
+- information from chapters below.
+
 ## Connecting to ownCloud
 
 As a user, you can connect to ownCloud using:
@@ -114,6 +122,8 @@ As a user, you can connect to ownCloud using:
 - ownCloud Desktop Client,
 - ownCloud Android App,
 - ownCloud iOS App.
+
+Ask for ownCloud server URL and your credentials before you run ownCloud software for the first time.
 
 ### ownCloud Desktop Client
 
@@ -149,21 +159,3 @@ The first time you run ownCloud app, it will asks you to provide your ownCloud s
 To learn more about Android app, go to [Using the ownCloud Android App](https://doc.owncloud.com/android/) page.
 
 For more information about iOS app, visit [Using the ownCloud iOS App](https://doc.owncloud.com/ios/) page.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
