@@ -56,11 +56,18 @@ Open [http://localhost:8080/](http://localhost:8080/). Here you can find a login
 
 Use admin credentials from `.env` file to log into ownCloud.
 
-Find more details on installation and managing ownCloud docker containers at [Installation on a Local Machine](https://doc.owncloud.com/server/10.1/admin_manual/installation/docker/#installation-on-a-local-machine) chapter.
+Find more details on installation and managing ownCloud docker containers at [Installation on a Local Machine](https://doc.owncloud.com/server/10.1/admin_manual/installation/docker/#installation-on-a-local-machine).
 
 ### Manual installation
 
-Download the latest archive with ownCloud server from [ownCloud Download Page](https://owncloud.org/install). You can verify MD5 or SHA256 sum to guarantee successful downloading.
+Download the latest archive with ownCloud server from [ownCloud Download Page](https://owncloud.org/install). You can verify MD5 or SHA256 sum to guarantee successful downloading:
+
+```
+md5sum -c owncloud-x.y.z.tar.bz2.md5 < owncloud-x.y.z.tar.bz2
+sha256sum -c owncloud-x.y.z.tar.bz2.sha256 < owncloud-x.y.z.tar.bz2
+md5sum  -c owncloud-x.y.z.zip.md5 < owncloud-x.y.z.zip
+sha256sum  -c owncloud-x.y.z.zip.sha256 < owncloud-x.y.z.zip
+```
 
 > You can read an installation example on [Install ownCloud on Ubuntu 18.04](https://doc.owncloud.com/server/10.1/admin_manual/installation/ubuntu_18_04.html) page.
 
