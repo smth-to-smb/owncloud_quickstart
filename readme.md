@@ -144,9 +144,11 @@ Android and iOS clients offer several advanced features which make them very con
 
 You can download ownCloud mobile app from Google Play and App Store.
 
-For Android, go to [Using the ownCloud Android App](https://doc.owncloud.com/android/) page.
+The first time you run ownCloud app, it will asks you to provide your ownCloud server URL and credentials for your account.
 
-For iOS, visit [Using the ownCloud iOS App](https://doc.owncloud.com/ios/) page.
+To learn more about Android app, go to [Using the ownCloud Android App](https://doc.owncloud.com/android/) page.
+
+For more information about iOS app, visit [Using the ownCloud iOS App](https://doc.owncloud.com/ios/) page.
 
 
 
