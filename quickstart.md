@@ -4,11 +4,11 @@
 
 ownCloud is a cloud collaboration platform which can be deployed on your server facilities. The main purpose of using ownCloud is to share files and directories.
 
-This Quickstart explains how to deploy Owncloud on a server and use it.
+This Quickstart explains how to deploy ownCloud on a server and use it after deployment.
 
 > All information from this Quickstart is available on [ownCloud Documentation](https://doc.owncloud.com/) page.
 
-After you have read this document, you will learn how to:
+After you read this document, you will learn how to:
 
 - install ownCloud on your server,
 - enable users to connect to the installed ownCloud instance,
@@ -146,7 +146,7 @@ Follow all its instructions and get software installed on your computer and conf
 
 To install Desktop Client on Linux, follow instructions on the [download page](https://owncloud.com/download/#desktop-clients).
 
-After you have installed Desktop Client, you can read more about it on [Using the Synchronization Client](https://doc.owncloud.com/desktop/navigating.html) page.
+After you install Desktop Client, you can read more about it on [Using the Synchronization Client](https://doc.owncloud.com/desktop/navigating.html) page.
 
 ### ownCloud mobile clients
 
