@@ -159,3 +159,7 @@ The first time you run ownCloud app, it will asks you to provide your ownCloud s
 To learn more about Android app, go to [Using the ownCloud Android App](https://doc.owncloud.com/android/) page.
 
 For more information about iOS app, visit [Using the ownCloud iOS App](https://doc.owncloud.com/ios/) page.
+
+## Miscellaneous
+
+All information from this Quickstart is available on [ownCloud Documentation](https://doc.owncloud.com/) page.
