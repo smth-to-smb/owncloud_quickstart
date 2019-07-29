@@ -1,4 +1,4 @@
-# ownCloud quickstart guide
+# Quickstart for installing and using ownCloud
 
 ## Introduction
 
