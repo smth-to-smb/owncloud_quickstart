@@ -127,7 +127,7 @@ Ask for ownCloud server URL and your credentials before you run ownCloud softwar
 
 ### ownCloud Desktop Client
 
-Using Desktop Client you can synchronize directories on your computer with ownCloud and have the latest files synchronized from ownCloud.
+Using Desktop Client you can synchronize directories on your computer with ones from ownCloud server.
 
 Desktop Client is available for MacOS X, Windows and various Linux distributions:
 
@@ -150,7 +150,9 @@ After you have installed Desktop Client, you can read more about it on [Using th
 
 ### ownCloud mobile clients
 
-Android and iOS clients offer several advanced features which make them very convenient and easy to use.
+Using mobile clients you can synchronize directories on your computer with ones from ownCloud server.
+
+Android and iOS clients also offer several advanced features which make them very convenient and easy to use.
 
 You can download ownCloud mobile app from Google Play and App Store.
 
