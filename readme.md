@@ -69,7 +69,7 @@ md5sum  -c owncloud-x.y.z.zip.md5 < owncloud-x.y.z.zip
 sha256sum  -c owncloud-x.y.z.zip.sha256 < owncloud-x.y.z.zip
 ```
 
-> Example of installation is described on [Install ownCloud on Ubuntu 18.04](https://doc.owncloud.com/server/10.1/admin_manual/installation/ubuntu_18_04.html) page.
+> Installation example is available on [Install ownCloud on Ubuntu 18.04](https://doc.owncloud.com/server/10.1/admin_manual/installation/ubuntu_18_04.html) page.
 
 Extract the archive contents into a single ownCloud directory.
 
