@@ -117,7 +117,7 @@ After you create user accounts, provide potential ownCloud users with following 
 
 ## Connecting to ownCloud
 
-As a user, you can connect to ownCloud using:
+As a user, you can connect to ownCloud server by means of:
 
 - ownCloud Desktop Client,
 - ownCloud Android App,
